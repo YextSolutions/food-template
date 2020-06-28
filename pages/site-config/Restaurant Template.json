@@ -1,0 +1,11 @@
+{
+  "$id": "Restaurant Template",
+  "$schema": "https://schema.yext.com/config/pages/site-config/v1",
+  "siteName": "Restaurant Template",
+  "features": [
+    {
+      "featureType": "SELF_SERVE_PAGE_SET",
+      "feature": "Restaurant Template"
+    }
+  ]
+}
