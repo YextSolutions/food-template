@@ -92,6 +92,43 @@
               "InputType": "",
               "Sink": "link6Url",
               "StringValue": "#"
+            },
+            {
+              "ExternalEntityId": "",
+              "InputType": "",
+              "Sink": "answersExperience",
+              "SubparameterContentMapEntries": [
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "Sink": "configurationLabel",
+                  "StringValue": "PRODUCTION"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "Sink": "searchResultsPageUrl",
+                  "StringValue": ""
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "Sink": "sdkVersion",
+                  "StringValue": "1"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "Sink": "placeholderText",
+                  "StringValue": "Search..."
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "Sink": "autocompletePromptHeading",
+                  "StringValue": "You can ask your brand:"
+                }
+              ]
             }
           ],
           "DefaultScss": ".module-navbar {\n\tpadding: 0;\n}\n\n.module-navbar-bg-color {\n  background-color: #f8f9fa;\n}\n\n.module-navbar .navbar-brand img {\n\theight: 50px; //height of the logo\n}\n\n.nav-link {\n    margin: 0 15px;\n}\n",
@@ -525,6 +562,186 @@
           "ListParamEntries": [],
           "ModuleId": "JHuC1J-tu_",
           "Scss": "$background-color: #e9ecef;\n$link-color: #212529;\n$mobile-breakpoint: 768px;\n\nbackground-color: $background-color;\npadding: 2rem 0;\n\n.footer-links {\n    display: flex;\n    justify-content: start;\n    padding-left: 0rem;\n\n    .footer-link {\n        padding: 0rem .5rem;\n        text-decoration: underline;\n        color: $link-color;\n\n        \u0026:first-child {\n            padding-left: 0px;\n        }\n\n        \u0026:hover {\n            text-decoration: none;\n        }\n    }\n}\n\n.col:empty {\n    display: none;\n}\n\n.caption-text {\n    padding-top: 1rem;\n    justify-content: start;\n}\n\n@media (max-width: $mobile-breakpoint) {\n    text-align: center;\n\n    .caption-text {\n        justify-content: center;\n    }\n\n    .footer-links {\n        flex-direction: column;\n        align-items: center;\n\n        .footer-link {\n            padding: 0.5rem 0rem;\n        }\n    }\n}\n\n.social-icon {\n    align-items: center;\n    display: flex;\n    justify-content: center;\n    height: 45px;\n    width: 45px;\n\n    .icon-img {\n        filter: invert(1); // make it black\n    }\n}"
+        },
+        {
+          "ContentMapEntries": [
+            {
+              "ExternalEntityId": "",
+              "InputType": "CONSTANT",
+              "Sink": "headline",
+              "StringValue": "Related FAQs"
+            }
+          ],
+          "DefaultScss": "padding: 2rem;\n$spacer: 1rem;\n\n.headline {\n  margin: 0 auto 2*$spacer;\n  text-align: center;\n}\n\n.image {\n  margin: 0 auto 2*$spacer;\n  width: 100%;\n}\n\n.faq {\n  margin-bottom: 2*$spacer;\n\n  .image-wrapper {\n    padding: 0 32px 0 0;\n\n    .image {\n      margin: 0 auto;\n      width: 100%;\n    }\n  }\n\n  .questionText {\n    margin-bottom: $spacer;\n  }\n\n  .answerText {\n    margin-bottom: $spacer;\n  }\n\n  .linkText {\n    color: var(--primary);\n    font-size: 16px;\n    margin-bottom: $spacer;\n  }\n}\n",
+          "Js": "",
+          "ListParamEntries": [
+            {
+              "ContentMapEntries": [
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "SelectedField": [
+                    "none"
+                  ],
+                  "Sink": "image"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "FIELD",
+                  "SelectedField": [
+                    "name"
+                  ],
+                  "Sink": "questionText"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "FIELD",
+                  "SelectedField": [
+                    "answer"
+                  ],
+                  "Sink": "answerText"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "FIELD",
+                  "SelectedField": [
+                    "c_primaryCTA",
+                    "label"
+                  ],
+                  "Sink": "linkText"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "SelectedField": [
+                    "c_primaryCTA",
+                    "link"
+                  ],
+                  "Sink": "linkURL"
+                }
+              ],
+              "ListParamSource": {
+                "AlternateExternalEntityId": "",
+                "EntityTypeName": "location",
+                "RelationshipField": "c_relatedFAQs",
+                "Reviews": false,
+                "SavedSearch": ""
+              },
+              "Sink": "faqList"
+            }
+          ],
+          "ModuleId": "J9cjv0JfyU",
+          "Scss": "padding: 2rem;\n$spacer: 1rem;\n\n.headline {\n  margin: 0 auto 2*$spacer;\n  text-align: center;\n}\n\n.image {\n  margin: 0 auto 2*$spacer;\n  width: 100%;\n}\n\n.faq {\n  margin-bottom: 2*$spacer;\n\n  .image-wrapper {\n    padding: 0 32px 0 0;\n\n    .image {\n      margin: 0 auto;\n      width: 100%;\n    }\n  }\n\n  .questionText {\n    margin-bottom: $spacer;\n  }\n\n  .answerText {\n    margin-bottom: $spacer;\n  }\n\n  .linkText {\n    color: var(--primary);\n    font-size: 16px;\n    margin-bottom: $spacer;\n  }\n}\n"
+        },
+        {
+          "ContentMapEntries": [
+            {
+              "ExternalEntityId": "",
+              "InputType": "CONSTANT",
+              "Sink": "headline",
+              "StringValue": "Offers Available"
+            }
+          ],
+          "DefaultScss": "$spacer: 1rem;\n\n// Variables for description text truncation\n$lh: 22;\n$line-height: 22px;\n\n$max-height: 180px;\n$mh: 180;\n$max-num-lines: floor($mh / $lh);\n\n$max-height-tablet: 90px;\n$mht: 90;\n$max-num-lines-tablet: floor($mht / $lh);\n\n$max-height-desktop: 68px;\n$mhd: 68;\n$max-num-lines-desktop: floor($mhd / $lh);\n\n.module-container {\n  padding: ($spacer * 2) 0;\n}\n\nul {\n  padding-inline-start: 0;\n  margin: 0 $spacer;\n}\n\n.row {\n  justify-content: center;\n}\n\n.headline {\n  font-size: 2em;\n  margin-bottom: $spacer;\n\n  @include media-breakpoint-down(sm) {\n    text-align: center;\n  }\n}\n\n.item-col {\n  margin-bottom: $spacer;\n  @include media-breakpoint-down(sm) {\n    text-align: center;\n  }\n}\n\n.section {\n  margin: $spacer $spacer 0;\n  font-size: 1em;\n}\n\n.item {\n  padding-bottom: ($spacer * 2);\n  height: 100%;\n  position: relative;\n  background-color: #f2f2f2;\n  text-align: left;\n  display: flex;\n  flex-direction: column;\n}\n\n.image {\n  object-fit: contain;\n  max-width: 100%;\n  width: 100%;\n  margin-bottom: $spacer;\n\n  \u0026-container {\n    flex-shrink: 0;\n  }\n}\n\n.title {\n  font-size: 1.5em;\n  font-weight: normal;\n  word-break: break-word;\n}\n\n.subtitle {\n  font-size: 1.25em;\n  font-weight: normal;\n}\n\n.address {}\n\n.phone {}\n\n.email {}\n\n.description, .description-text {\n  max-height: $max-height;\n\n  @include media-breakpoint-up(sm) {\n    max-height: $max-height-tablet;\n  }\n\n  @include media-breakpoint-up(lg) {\n    max-height: $max-height-desktop;\n  }\n}\n\n.description-text {\n  -webkit-line-clamp: $max-num-lines;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n\n  @include media-breakpoint-up(sm) {\n    -webkit-line-clamp: $max-num-lines-tablet;\n  }\n\n  @include media-breakpoint-up(lg) {\n    -webkit-line-clamp: $max-num-lines-desktop;\n  }\n}\n\n.text-list {}\n\n.list-item {\n  margin-left: -5px;\n}\n\n.cta {\n  font-size: 1em;\n  text-decoration: none;\n\n  \u0026-container {\n    display: flex;\n    align-items: flex-end;\n    height: 100%;\n  }\n}\n",
+          "Js": "",
+          "ListParamEntries": [
+            {
+              "ContentMapEntries": [
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "SelectedField": [
+                    "none"
+                  ],
+                  "Sink": "image"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "FIELD",
+                  "SelectedField": [
+                    "name"
+                  ],
+                  "Sink": "title"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "FIELD",
+                  "SelectedField": [
+                    "none"
+                  ],
+                  "Sink": "subtitle"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "SelectedField": [
+                    "none"
+                  ],
+                  "Sink": "address"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "SelectedField": [
+                    "none"
+                  ],
+                  "Sink": "phone"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "SelectedField": [
+                    "none"
+                  ],
+                  "Sink": "email"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "FIELD",
+                  "SelectedField": [
+                    "description"
+                  ],
+                  "Sink": "description"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "SelectedField": [
+                    "none"
+                  ],
+                  "Sink": "textList"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "FIELD",
+                  "SelectedField": [
+                    "c_primaryCTA",
+                    "label"
+                  ],
+                  "Sink": "infoLinkText"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "FIELD",
+                  "SelectedField": [
+                    "c_primaryCTA",
+                    "link"
+                  ],
+                  "Sink": "infoLink"
+                }
+              ],
+              "ListParamSource": {
+                "AlternateExternalEntityId": "",
+                "EntityTypeName": "location",
+                "RelationshipField": "c_relatedOffers",
+                "Reviews": false,
+                "SavedSearch": ""
+              },
+              "Sink": "items"
+            }
+          ],
+          "ModuleId": "J9aDzxufBU",
+          "Scss": "$spacer: 1rem;\n\n// Variables for description text truncation\n$lh: 22;\n$line-height: 22px;\n\n$max-height: 180px;\n$mh: 180;\n$max-num-lines: floor($mh / $lh);\n\n$max-height-tablet: 90px;\n$mht: 90;\n$max-num-lines-tablet: floor($mht / $lh);\n\n$max-height-desktop: 68px;\n$mhd: 68;\n$max-num-lines-desktop: floor($mhd / $lh);\n\n.module-container {\n  padding: ($spacer * 2) 0;\n}\n\nul {\n  padding-inline-start: 0;\n  margin: 0 $spacer;\n}\n\n.row {\n  justify-content: left;\n}\n\n.headline {\n  font-size: 2em;\n  margin-bottom: $spacer;\n  text-align: center;\n\n  @include media-breakpoint-down(sm) {\n    text-align: center;\n  }\n}\n\n.item-col {\n  margin-bottom: $spacer;\n  @include media-breakpoint-down(sm) {\n    text-align: center;\n  }\n}\n\n.section {\n  margin: $spacer $spacer 0;\n  font-size: 1em;\n}\n\n.item {\n  padding-bottom: ($spacer * 2);\n  height: 100%;\n  position: relative;\n  background-color: #f2f2f2;\n  text-align: left;\n  display: flex;\n  flex-direction: column;\n}\n\n.image {\n  object-fit: contain;\n  max-width: 100%;\n  width: 100%;\n  margin-bottom: $spacer;\n\n  \u0026-container {\n    flex-shrink: 0;\n  }\n}\n\n.title {\n  font-size: 1.5em;\n  font-weight: normal;\n  word-break: break-word;\n}\n\n.subtitle {\n  font-size: 1.25em;\n  font-weight: normal;\n}\n\n.address {}\n\n.phone {}\n\n.email {}\n\n.description, .description-text {\n  max-height: $max-height;\n\n  @include media-breakpoint-up(sm) {\n    max-height: $max-height-tablet;\n  }\n\n  @include media-breakpoint-up(lg) {\n    max-height: $max-height-desktop;\n  }\n}\n\n.description-text {\n  -webkit-line-clamp: $max-num-lines;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n\n  @include media-breakpoint-up(sm) {\n    -webkit-line-clamp: $max-num-lines-tablet;\n  }\n\n  @include media-breakpoint-up(lg) {\n    -webkit-line-clamp: $max-num-lines-desktop;\n  }\n}\n\n.text-list {}\n\n.list-item {\n  margin-left: -5px;\n}\n\n.cta {\n  font-size: 1em;\n  text-decoration: none;\n\n  \u0026-container {\n    display: flex;\n    align-items: flex-end;\n    height: 100%;\n  }\n}\n"
         }
       ],
       "ThemeMapping": {
@@ -618,7 +835,7 @@
         "DisplayNameOverride": "",
         "Id": "9JuCNHkwH_",
         "Module": "nav_bar",
-        "Version": 45
+        "Version": 46
       },
       {
         "DisplayNameOverride": "",
@@ -643,6 +860,18 @@
         "Id": "J99C1ukwH_",
         "Module": "about_this_page",
         "Version": 61
+      },
+      {
+        "DisplayNameOverride": "Offers Available",
+        "Id": "J9aDzxufBU",
+        "Module": "item_list_i",
+        "Version": 16
+      },
+      {
+        "DisplayNameOverride": "",
+        "Id": "J9cjv0JfyU",
+        "Module": "faq_list",
+        "Version": 16
       },
       {
         "DisplayNameOverride": "",

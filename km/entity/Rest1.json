@@ -3,6 +3,12 @@
   "$schema": "https://schema.yext.com/config/km/entity/v1",
   "content": {
     "c_activeInAnswers": true,
+    "c_relatedFAQs": [
+      "FAQ1"
+    ],
+    "c_relatedOffers": [
+      "Offer1"
+    ],
     "yext/address": {
       "city": "New York",
       "countryCode": "US",

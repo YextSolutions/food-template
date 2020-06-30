@@ -3,7 +3,7 @@
   "$schema": "https://schema.yext.com/config/pages/site-config/v1",
   "siteName": "Answers",
   "repoConfig": {
-    "targetRepoName": "${{github_repository_name}}",
+    "targetRepoName": "${{answers_github_repo_name}}",
     "templateRepo": "github.com/yext-pages/answers-foodtemplate.yext-cdn.com"
   },
   "publishingConfig": {

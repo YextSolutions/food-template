@@ -1,7 +1,7 @@
 {
-  "$id": "c_relatedFAQs",
+  "$id": "c_relatedOffers",
   "$schema": "https://schema.yext.com/config/km/field/v1",
-  "displayName": "Related FAQs",
+  "displayName": "Related Offers",
   "group": "NONE",
   "localization": "PRIMARY_ONLY",
   "type": {
@@ -10,7 +10,7 @@
       "type": {
         "entityReferenceType": {
           "supportedEntityTypeIds": [
-            "yext/faq"
+            "ce_offer"
           ]
         }
       }

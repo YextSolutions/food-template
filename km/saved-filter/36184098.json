@@ -1,0 +1,21 @@
+{
+  "$id": "36184098",
+  "$schema": "https://schema.yext.com/config/km/saved-filter/v1",
+  "name": "Answers - Restaurants",
+  "filter": {
+    "entityField": [
+      {
+        "fieldId": "c_activeInAnswers",
+        "searchBool": "TRUE"
+      }
+    ],
+    "entityType": [
+      {
+        "entityTypeId": [
+          "yext/restaurant"
+        ],
+        "type": "IS"
+      }
+    ]
+  }
+}

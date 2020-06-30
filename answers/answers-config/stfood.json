@@ -5,33 +5,12 @@
   "supportedLocales": [],
   "countryRestrictions": [],
   "verticals": {
-    "Events": {
-      "entityTypes": [
-        "event"
-      ],
-      "name": "Events",
-      "searchableFields": {
-        "address": {
-          "directAnswer": true
-        },
-        "builtin.entityType": {
-          "nlpFilter": true
-        },
-        "name": {
-          "textSearch": true
-        },
-        "time": {
-          "directAnswer": true
-        }
-      },
-      "sortBys": [],
-      "source": "KNOWLEDGE_MANAGER"
-    },
     "FAQs": {
       "entityTypes": [
         "faq"
       ],
       "name": "FAQs",
+      "savedSearchId": "36162502",
       "searchableFields": {
         "builtin.entityType": {
           "nlpFilter": true
@@ -48,6 +27,7 @@
         "job"
       ],
       "name": "Jobs",
+      "savedSearchId": "36167901",
       "searchableFields": {
         "builtin.entityType": {
           "nlpFilter": true
@@ -86,6 +66,7 @@
         "ce_menuItem"
       ],
       "name": "Menu Items",
+      "savedSearchId": "36173300",
       "searchableFields": {
         "builtin.entityType": {
           "nlpFilter": true
@@ -100,17 +81,38 @@
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
+    "Offers": {
+      "entityTypes": [
+        "ce_offer"
+      ],
+      "name": "Offers",
+      "savedSearchId": "36178699",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "name": {
+          "textSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    },
     "Restaurants": {
       "entityTypes": [
         "restaurant"
       ],
       "name": "Restaurants",
+      "savedSearchId": "36184098",
       "searchableFields": {
         "builtin.entityType": {
           "nlpFilter": true
         },
         "builtin.location": {
           "nlpFilter": true,
+          "textSearch": true
+        },
+        "c_relatedOffers": {
           "textSearch": true
         },
         "name": {
@@ -130,7 +132,20 @@
     ]
   },
   "synonyms": {
-    "oneWay": [],
+    "oneWay": [
+      {
+        "phrase": "location",
+        "synonyms": [
+          "restaurant"
+        ]
+      },
+      {
+        "phrase": "locations",
+        "synonyms": [
+          "restaurants"
+        ]
+      }
+    ],
     "synonymSet": [
       [
         "covid",
@@ -139,6 +154,22 @@
         "virus",
         "covid19",
         "covid-19"
+      ],
+      [
+        "specials",
+        "deals",
+        "offers",
+        "offer"
+      ],
+      [
+        "how much",
+        "pricing",
+        "price",
+        "prices"
+      ],
+      [
+        "cals",
+        "calories"
       ]
     ]
   },
