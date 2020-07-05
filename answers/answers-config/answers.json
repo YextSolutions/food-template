@@ -1,11 +1,11 @@
 {
   "$schema": "https://schema.yext.com/config/answers/answers-config/v1",
-  "$id": "stfood",
-  "name": "Food Template",
+  "$id": "answers",
+  "name": "Answers",
   "supportedLocales": [],
   "countryRestrictions": [],
   "verticals": {
-    "FAQs": {
+    "faqs": {
       "entityTypes": [
         "faq"
       ],
@@ -15,6 +15,9 @@
         "builtin.entityType": {
           "nlpFilter": true
         },
+        "keywords": {
+          "textSearch": true
+        },
         "name": {
           "textSearch": true
         }
@@ -22,7 +25,7 @@
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
-    "Jobs": {
+    "jobs": {
       "entityTypes": [
         "job"
       ],
@@ -53,7 +56,7 @@
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
-    "Links": {
+    "links": {
       "apiKey": "REPLACE_API_KEY",
       "cx": "REPLACE_CX_KEY",
       "name": "Links",
@@ -61,7 +64,7 @@
       "source": "GOOGLE_CSE",
       "useSynonyms": "ALL_SYNONYMS"
     },
-    "Menu_Items": {
+    "menu-items": {
       "entityTypes": [
         "ce_menuItem"
       ],
@@ -74,6 +77,9 @@
         "c_allergens": {
           "textSearch": true
         },
+        "c_calories": {
+          "directAnswer": true
+        },
         "name": {
           "textSearch": true
         }
@@ -81,7 +87,7 @@
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
-    "Offers": {
+    "offers": {
       "entityTypes": [
         "ce_offer"
       ],
@@ -98,7 +104,7 @@
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
-    "Restaurants": {
+    "restaurants": {
       "entityTypes": [
         "restaurant"
       ],
@@ -115,6 +121,9 @@
         "c_relatedOffers": {
           "textSearch": true
         },
+        "mainPhone": {
+          "directAnswer": true
+        },
         "name": {
           "textSearch": true
         }
@@ -126,23 +135,24 @@
   "autocomplete": {
     "disablePopularQueries": false,
     "hardcodedPrompts": [
-      "What is Yext?",
       "Menu items available",
-      "Restaurants near me"
+      "Restaurants near me",
+      "Available offers",
+      "Open positions"
     ]
   },
   "synonyms": {
     "oneWay": [
       {
-        "phrase": "location",
+        "phrase": "phone",
         "synonyms": [
-          "restaurant"
+          "main phone"
         ]
       },
       {
-        "phrase": "locations",
+        "phrase": "call",
         "synonyms": [
-          "restaurants"
+          "main phone"
         ]
       }
     ],
@@ -159,7 +169,8 @@
         "specials",
         "deals",
         "offers",
-        "offer"
+        "offer",
+        "promotion"
       ],
       [
         "how much",
@@ -170,6 +181,13 @@
       [
         "cals",
         "calories"
+      ],
+      [
+        "location",
+        "restaurant",
+        "locations",
+        "eatery",
+        "place"
       ]
     ]
   },

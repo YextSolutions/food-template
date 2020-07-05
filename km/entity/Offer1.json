@@ -3,16 +3,30 @@
   "$schema": "https://schema.yext.com/config/km/entity/v1",
   "content": {
     "c_activeInAnswers": true,
-    "c_expirationDate": "2024-06-30",
+    "c_expirationDate": "2024-07-02",
+    "c_photo": {
+      "image": {
+        "height": 250,
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Yext_500.png/250px-Yext_500.png",
+        "thumbnails": [
+          {
+            "height": 196,
+            "url": "https://a.mktgcdn.com/p/PS1NYTmBhbTYWu6OgdsE3EwuJUob_U-89JyIFlSxUNc/196x196.png",
+            "width": 196
+          }
+        ],
+        "url": "https://a.mktgcdn.com/p/PS1NYTmBhbTYWu6OgdsE3EwuJUob_U-89JyIFlSxUNc/250x250.png",
+        "width": 250
+      }
+    },
     "c_primaryCTA": {
-      "label": "Learn More",
+      "label": "Redeem Now",
       "link": "https://www.yext.com",
       "linkType": "URL"
     },
-    "c_startDate": "2020-06-30",
     "yext/description": "This offer is for 50% off all purchases!",
     "yext/landingPageUrl": "https://www.yext.com",
-    "yext/name": "Yext Promotion"
+    "yext/name": "Menu Offer"
   },
   "entityType": "ce_offer",
   "labels": []
