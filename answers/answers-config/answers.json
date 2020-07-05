@@ -5,6 +5,14 @@
   "supportedLocales": [],
   "countryRestrictions": [],
   "verticals": {
+    "cdc-covid": {
+      "headers": {},
+      "method": "POST",
+      "name": "CDC Coronavirus FAQs",
+      "params": {},
+      "source": "CUSTOM_SEARCHER",
+      "url": "https://lps9q23cb7.execute-api.us-east-1.amazonaws.com/prod"
+    },
     "faqs": {
       "entityTypes": [
         "faq"
@@ -87,6 +95,14 @@
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
+    "nhs-covid": {
+      "headers": {},
+      "method": "POST",
+      "name": "NHS Coronavirus FAQs",
+      "params": {},
+      "source": "CUSTOM_SEARCHER",
+      "url": "https://qt81fms627.execute-api.us-east-1.amazonaws.com/prod"
+    },
     "offers": {
       "entityTypes": [
         "ce_offer"
@@ -130,6 +146,14 @@
       },
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
+    },
+    "who-covid": {
+      "headers": {},
+      "method": "POST",
+      "name": "WHO Coronavirus FAQs",
+      "params": {},
+      "source": "CUSTOM_SEARCHER",
+      "url": "https://twm82am3y0.execute-api.us-east-1.amazonaws.com/prod"
     }
   },
   "autocomplete": {
