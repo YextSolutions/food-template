@@ -130,7 +130,7 @@
           "nlpFilter": true,
           "textSearch": true
         },
-        "c_relatedOffers": {
+        "c_relatedOffers.name": {
           "textSearch": true
         },
         "mainPhone": {
