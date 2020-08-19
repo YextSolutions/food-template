@@ -1,5 +1,5 @@
 {
-  "$id": "Restaurant Template",
+  "$id": "Restaurant_Template",
   "$schema": "https://schema.yext.com/config/pages/page-builder-template/v1",
   "PageSetType": "TEMPLATE",
   "EntityTypeName": "restaurant",
@@ -893,5 +893,6 @@
     },
     "Theme": "cosmo",
     "ThemeVersion": 17
-  }
+  },
+  "Name": "Restaurant Template"
 }

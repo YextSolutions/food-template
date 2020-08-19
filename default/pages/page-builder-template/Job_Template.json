@@ -1,5 +1,5 @@
 {
-  "$id": "Job Template",
+  "$id": "Job_Template",
   "$schema": "https://schema.yext.com/config/pages/page-builder-template/v1",
   "PageSetType": "TEMPLATE",
   "EntityTypeName": "job",
@@ -560,5 +560,6 @@
     },
     "Theme": "cosmo",
     "ThemeVersion": 17
-  }
+  },
+  "Name": "Job Template"
 }
