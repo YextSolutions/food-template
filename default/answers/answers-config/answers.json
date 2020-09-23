@@ -55,6 +55,9 @@
         },
         "name": {
           "textSearch": true
+        },
+        "keywords": {
+          "textSearch": true
         }
       },
       "sortBys": [],
@@ -86,6 +89,9 @@
         },
         "name": {
           "textSearch": true
+        },
+        "keywords": {
+          "textSearch": true
         }
       },
       "sortBys": [],
@@ -110,6 +116,9 @@
           "nlpFilter": true
         },
         "name": {
+          "textSearch": true
+        },
+        "keywords": {
           "textSearch": true
         }
       },
@@ -137,6 +146,9 @@
           "directAnswer": true
         },
         "name": {
+          "textSearch": true
+        },
+        "keywords": {
           "textSearch": true
         }
       },

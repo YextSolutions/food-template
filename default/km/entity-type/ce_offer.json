@@ -52,6 +52,10 @@
     {
       "id": "yext/entityId",
       "required": true
+    },
+    {
+      "id": "yext/keywords",
+      "required": false
     }
   ],
   "pluralDisplayName": "Offers"
