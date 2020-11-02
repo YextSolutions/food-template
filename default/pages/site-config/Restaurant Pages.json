@@ -1,11 +1,11 @@
 {
-  "$id": "Job_Template",
+  "$id": "eatable-handed-risotto-35352",
   "$schema": "https://schema.yext.com/config/pages/site-config/v1",
-  "siteName": "Job Template",
+  "siteName": "Restaurant Template",
   "features": [
     {
       "featureType": "SELF_SERVE_PAGE_SET",
-      "feature": "Job_Template"
+      "feature": "finished-dragonish-barcode-94195"
     }
   ]
 }
