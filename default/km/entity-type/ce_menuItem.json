@@ -6,6 +6,10 @@
   "enabled": true,
   "field": [
     {
+      "id": "yext/landingPageUrl",
+      "required": false
+    },
+    {
       "id": "yext/description",
       "required": false
     },
@@ -60,10 +64,6 @@
     {
       "id": "yext/entityId",
       "required": true
-    },
-    {
-      "id": "yext/websiteUrl",
-      "required": false
     }
   ],
   "pluralDisplayName": "Menu Items"
