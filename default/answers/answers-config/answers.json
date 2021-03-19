@@ -36,8 +36,7 @@
           "nlpFilter": true
         },
         "builtin.location": {
-          "nlpFilter": true,
-          "textSearch": true
+          "nlpFilter": true
         },
         "employmentType": {
           "textSearch": true
@@ -64,6 +63,13 @@
       "useSynonyms": "ALL_SYNONYMS"
     },
     "menu-items": {
+      "directAnswers": {
+        "fieldValues": {
+          "eligibleFields": [
+            "c_calories"
+          ]
+        }
+      },
       "entityTypes": [
         "ce_menuItem"
       ],
@@ -75,9 +81,6 @@
         },
         "c_allergens": {
           "textSearch": true
-        },
-        "c_calories": {
-          "directAnswer": true
         },
         "name": {
           "textSearch": true
@@ -110,6 +113,13 @@
       "source": "KNOWLEDGE_MANAGER"
     },
     "restaurants": {
+      "directAnswers": {
+        "fieldValues": {
+          "eligibleFields": [
+            "mainPhone"
+          ]
+        }
+      },
       "entityTypes": [
         "restaurant"
       ],
@@ -120,14 +130,10 @@
           "nlpFilter": true
         },
         "builtin.location": {
-          "nlpFilter": true,
-          "textSearch": true
+          "nlpFilter": true
         },
         "c_relatedOffers.name": {
           "textSearch": true
-        },
-        "mainPhone": {
-          "directAnswer": true
         },
         "name": {
           "textSearch": true
@@ -140,14 +146,35 @@
       "source": "KNOWLEDGE_MANAGER"
     }
   },
-  "autocomplete": {
-    "disablePopularQueries": false,
-    "hardcodedPrompts": [
+  "querySuggestions": {
+    "popularQueriesBlacklistedTerms": [],
+    "universalPrompts": [
+      "What is Yext?",
       "Menu items available",
       "Restaurants near me",
       "Available offers",
-      "Open positions"
-    ]
+      "open jobs near me"
+    ],
+    "verticalPrompts": {
+      "faqs": [
+        "[[name]]"
+      ],
+      "locations": [
+        "Locations near [[address.city]]",
+        "Locations near [[address.region]]",
+        "Locations near me"
+      ],
+      "offers": [
+        "[[name]]"
+      ],
+      "jobs": [
+        "[[name]]",
+        "open jobs near me"
+      ],
+      "menu-items": [
+        "[[name]]]]"
+      ]
+    }
   },
   "synonyms": {
     "oneWay": [
@@ -199,5 +226,6 @@
       ]
     ]
   },
-  "localizations": {}
+  "localizations": {},
+  "additionalSearchablePlaces": []
 }
