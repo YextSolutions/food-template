@@ -159,10 +159,10 @@
       "faqs": [
         "[[name]]"
       ],
-      "locations": [
-        "Locations near [[address.city]]",
-        "Locations near [[address.region]]",
-        "Locations near me"
+      "restaurants": [
+        "Restaurants near [[address.city]]",
+        "Restaurants near [[address.region]]",
+        "Restaurants near me"
       ],
       "offers": [
         "[[name]]"
