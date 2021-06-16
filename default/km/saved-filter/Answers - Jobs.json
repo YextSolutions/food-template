@@ -1,7 +1,7 @@
 {
   "$id": "36167901",
   "$schema": "https://schema.yext.com/config/km/saved-filter/v1",
-  "name": "Answers - Job",
+  "name": "Answers - Jobs",
   "filter": {
     "entityField": [
       {

@@ -13,6 +13,11 @@
         "url": "http://a.mktgcdn.com/p/C16qugi_tqFIfCdlYoBp300tqpHW3uNbDcFF_UUqaB0/2000x3008.jpg"
     },
     "c_price": "5",
+    "c_primaryCTA": {
+      "label": "Order Now",
+      "link": "https://www.yext.com",
+      "linkType": "URL"
+    },
     "yext/description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Purus faucibus ornare suspendisse sed nisi lacus. Cursus turpis massa tincidunt dui ut ornare lectus sit amet.",
     "yext/landingPageUrl": "https://www.yext.com",
     "yext/name": "Menu Item"
