@@ -156,7 +156,7 @@
       "Menu items available",
       "Restaurants near me",
       "Available offers",
-      "open jobs near me"
+      "Open jobs near me"
     ],
     "verticalPrompts": {
       "faqs": [
@@ -172,7 +172,7 @@
       ],
       "jobs": [
         "[[name]]",
-        "open jobs near me"
+        "Open jobs near me"
       ],
       "menu-items": [
         "[[name]]]]"
