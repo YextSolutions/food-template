@@ -8,16 +8,16 @@
     "c_relatedOffers": [
       "Offer1"
     ],
-    "yext/address": {
+    "address": {
       "city": "New York",
       "countryCode": "US",
       "line1": "61 9th Ave",
       "postalCode": "10011",
       "region": "NY"
     },
-    "yext/addressHidden": false,
-    "yext/description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "yext/hours": {
+    "addressHidden": false,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "hours": {
       "friday": {
         "isClosed": false,
         "openIntervals": [
@@ -76,15 +76,15 @@
         ]
       }
     },
-    "yext/mainPhone": "+17574070511",
-    "yext/name": "Turtlehead Tacos",
-    "yext/timezone": "America/New_York",
-    "yext/websiteUrl": {
+    "mainPhone": "+17574070511",
+    "name": "Turtlehead Tacos",
+    "timezone": "America/New_York",
+    "websiteUrl": {
       "displayUrl": "https://www.yext.com",
       "preferDisplayUrl": false,
       "url": "https://www.yext.com"
     }
   },
-  "entityType": "yext/restaurant",
+  "entityType": "restaurant",
   "labels": []
 }

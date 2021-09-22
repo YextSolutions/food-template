@@ -13,9 +13,9 @@
       "link": "https://www.yext.com",
       "linkType": "URL"
     },
-    "yext/description": "This offer is for 50% off all purchases!",
-    "yext/landingPageUrl": "https://www.yext.com",
-    "yext/name": "Menu Offer"
+    "description": "This offer is for 50% off all purchases!",
+    "landingPageUrl": "https://www.yext.com",
+    "name": "Menu Offer"
   },
   "entityType": "ce_offer",
   "labels": []
