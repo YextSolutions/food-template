@@ -1,0 +1,17 @@
+{
+  "$id": "ce_offer.default",
+  "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
+  "name": "Offer-default",
+  "entityType": "ce_offer",
+  "fields": [
+    "landingPageUrl",
+    "description",
+    "c_activeInAnswers",
+    "c_expirationDate",
+    "c_photo",
+    "c_primaryCTA",
+    "c_secondaryCTA",
+    "c_startDate",
+    "keywords"
+  ]
+}

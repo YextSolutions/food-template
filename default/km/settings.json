@@ -1,4 +1,35 @@
 {
   "$schema": "https://schema.yext.com/config/km/settings/v1",
-  "primaryEntityType": "restaurant"
+  "primaryEntityType": "restaurant",
+  "entityTypeSettings": [
+    {
+      "entityType": "ce_menuItem",
+      "defaultFieldEligibilityGroup": "ce_menuItem.default",
+      "disabled": false
+    },
+    {
+      "entityType": "ce_offer",
+      "defaultFieldEligibilityGroup": "ce_offer.default",
+      "disabled": false
+    },
+    {
+      "entityType": "faq",
+      "defaultFieldEligibilityGroup": "faq.default",
+      "disabled": false
+    },
+    {
+      "entityType": "job",
+      "defaultFieldEligibilityGroup": "job.default",
+      "disabled": false
+    },
+    {
+      "entityType": "location",
+      "disabled": false
+    },
+    {
+      "entityType": "restaurant",
+      "defaultFieldEligibilityGroup": "restaurant.default",
+      "disabled": false
+    }
+  ]
 }
