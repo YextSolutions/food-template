@@ -1,7 +1,7 @@
 {
-  "$id": "ce_offer.default",
+  "$id": "foodSolution_ce_offer",
   "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
-  "name": "Offer-default",
+  "name": "foodSolution-Offer",
   "entityType": "ce_offer",
   "fields": [
     "landingPageUrl",

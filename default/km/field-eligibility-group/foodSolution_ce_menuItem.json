@@ -1,7 +1,7 @@
 {
-  "$id": "ce_menuItem.default",
+  "$id": "foodSolution_ce_menuItem",
   "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
-  "name": "Menu Item-default",
+  "name": "foodSolution-Menu Item",
   "entityType": "ce_menuItem",
   "fields": [
     "landingPageUrl",
