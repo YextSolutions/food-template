@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.yext.com/config/km/settings/v1",
+  "primaryEntityType": "restaurant",
+  "entityTypeSettings": [
+    {
+      "entityType": "ce_menuItem",
+      "disabled": false
+    },
+    {
+      "entityType": "ce_offer",
+      "disabled": false
+    },
+    {
+      "entityType": "faq",
+      "disabled": false
+    },
+    {
+      "entityType": "job",
+      "disabled": false
+    },
+    {
+      "entityType": "location",
+      "disabled": false
+    },
+    {
+      "entityType": "restaurant",
+      "disabled": false
+    }
+  ]
+} 
