@@ -22,6 +22,11 @@
           "semanticTextSearch": true
         }
       },
+      "semanticVerticalIntents": [
+        "faqs",
+        "questions"
+      ],
+      "semanticVerticalThreshold": 0.2,
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
@@ -47,13 +52,20 @@
         "hiringOrganization": {
           "textSearch": true
         },
-        "name": {
+        "keywords": {
           "textSearch": true
         },
-        "keywords": {
+        "name": {
           "textSearch": true
         }
       },
+      "semanticVerticalBias": -0.1,
+      "semanticVerticalIntents": [
+        "jobs",
+        "open jobs",
+        "careers"
+      ],
+      "semanticVerticalThreshold": 0.2,
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
@@ -61,6 +73,7 @@
       "apiKey": "REPLACE_API_KEY",
       "cx": "REPLACE_CX_KEY",
       "name": "Links",
+      "semanticVerticalIntents": [],
       "siteRestricted": false,
       "source": "GOOGLE_CSE",
       "useSynonyms": "ALL_SYNONYMS"
@@ -70,7 +83,8 @@
         "fieldValues": {
           "eligibleFields": [
             "c_calories"
-          ]
+          ],
+          "predictionMode": "CLASSIFIER"
         }
       },
       "entityTypes": [
@@ -85,13 +99,20 @@
         "c_allergens": {
           "textSearch": true
         },
-        "name": {
+        "keywords": {
           "textSearch": true
         },
-        "keywords": {
+        "name": {
           "textSearch": true
         }
       },
+      "semanticVerticalBias": 0.1,
+      "semanticVerticalIntents": [
+        "menu items",
+        "menu",
+        "food"
+      ],
+      "semanticVerticalThreshold": 0.2,
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
@@ -105,13 +126,19 @@
         "builtin.entityType": {
           "nlpFilter": true
         },
-        "name": {
+        "keywords": {
           "textSearch": true
         },
-        "keywords": {
+        "name": {
           "textSearch": true
         }
       },
+      "semanticVerticalIntents": [
+        "offers",
+        "deals",
+        "sale"
+      ],
+      "semanticVerticalThreshold": 0.2,
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
@@ -120,7 +147,8 @@
         "fieldValues": {
           "eligibleFields": [
             "mainPhone"
-          ]
+          ],
+          "predictionMode": "CLASSIFIER"
         }
       },
       "entityTypes": [
@@ -138,45 +166,22 @@
         "c_relatedOffers.name": {
           "textSearch": true
         },
-        "name": {
+        "keywords": {
           "textSearch": true
         },
-        "keywords": {
+        "name": {
           "textSearch": true
         }
       },
+      "semanticVerticalBias": 0.1,
+      "semanticVerticalIntents": [
+        "restaurants",
+        "locations",
+        "locations near me"
+      ],
+      "semanticVerticalThreshold": 0.2,
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
-    }
-  },
-  "querySuggestions": {
-    "popularQueriesBlacklistedTerms": [],
-    "universalPrompts": [
-      "FAQs",
-      "Menu items available",
-      "Restaurants near me",
-      "Available offers",
-      "Open jobs near me"
-    ],
-    "verticalPrompts": {
-      "faqs": [
-        "[[name]]"
-      ],
-      "restaurants": [
-        "Restaurants near [[address.city]]",
-        "Restaurants near [[address.region]]",
-        "Restaurants near me"
-      ],
-      "offers": [
-        "[[name]]"
-      ],
-      "jobs": [
-        "[[name]]",
-        "Open jobs near me"
-      ],
-      "menu-items": [
-        "[[name]]]]"
-      ]
     }
   },
   "synonyms": {
@@ -230,5 +235,37 @@
     ]
   },
   "localizations": {},
-  "additionalSearchablePlaces": []
+  "additionalSearchablePlaces": [],
+  "querySuggestions": {
+    "disablePopularQueries": false,
+    "verticalPromptsOnEmpty": false,
+    "popularQueriesBlacklistedTerms": [],
+    "universalPrompts": [
+      "FAQs",
+      "Menu items available",
+      "Restaurants near me",
+      "Available offers",
+      "Open jobs near me"
+    ],
+    "verticalPrompts": {
+      "faqs": [
+        "[[name]]"
+      ],
+      "jobs": [
+        "[[name]]",
+        "Open jobs near me"
+      ],
+      "menu-items": [
+        "[[name]]]]"
+      ],
+      "offers": [
+        "[[name]]"
+      ],
+      "restaurants": [
+        "Restaurants near [[address.city]]",
+        "Restaurants near [[address.region]]",
+        "Restaurants near me"
+      ]
+    }
+  }
 }
